@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <! -- set mode in Internet Explorer to use the latest rendering engine--> 
+    <meta name = "viewport" content="width-device-width, initial-scale=1.0">
+    <! -- responsive design, page scales in different devices -->
+    <title> My Portfolio  :D </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2f29e3b967.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="showcase">
+            <video src="images/island.mp4" muted loop autoplay></video>
+        </div>
+        <div class="container_1">
+            <nav>
+                <img src="images/pixel.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Goals</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Project</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>A random Tech Enthusiast | Developer</p>
+                <h1>Hi 👋 , I'm <span>Pimnapat (Patty)</span><br> From Thailand</h1>
+            </div>
+        </div>
+    </div>
+
+<!--------------about ---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user_1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me ✨</h1>
+                <br>
+                <div class="box">
+                    <p>My name is Pimnapat, but you can call me Patty. I have a strong passion for technology, with a particular focus on 🤖 Artificial Intelligence 
+                        and 💻 Cybersecurity. I aspire to build a career in these fields and continuously expand my knowledge and skills. I'm also eager to collaborate 
+                        with individuals who share a common drive for innovation and create new possibilities together 🤝.
+                    </p>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python ✩✩✩, C++ ✩✩, Swift ✩</li>
+                        <li><span>UX/UI</span><br>HTML, CSS, Javascript ✩</li>
+                        <li><span>AI</span><br>Neural Network ✩✩, Computer Vision ✩</li>
+                        <li><span>Others</span><br>IOT ✩✩, Cybersecurity ✩</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <div class="experience-columns">
+                        <ul class="experience-column">
+                            <li><span>CAI Camp</span><br>CAI Gen 6, Junior Mentor Gen 7</li>
+                            <li><span>Next Gen AI Camp 1st</span><br>Top 10 Award ⭐ (onsite round)</li>
+                            <li><span>CAI Retail Hackathon</span><br>Second Place 🥈</li>
+                            <li><span>I New Gen 2024</span><br>1st place 🏆, Gold medal 🏅</li>
+                        </ul>
+                        <ul class="experience-column">
+                            <li><span>CSITF, Shainghai China</span><br>Gold Medal 🏅</li>
+                            <li><span>ITEX, Malaysia</span><br>Silver Medal 🥈, Qatar and Taiwan Special Award ⭐</li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Junior High School</span><br>Sarasas Witaed Chiang Mai School</li>
+                        <li><span>Senior High School</span><br>Montfort College</li>
+                        <li><span>Bachelor Degrees</span><br>???</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------services-------------->
+<!-- Services Section -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Goals 🌟</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Developer</h2>
+                <p>I enjoy working with technology and I hope to become a great developer, creating efficient and secured softwares.</p>
+                <a href="#">💻</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Joining in Competition</h2>
+                <p>If anyone is looking for a team member in hackathon or competition related to technology, contact me. I'd be a great candidate</p>
+                <a href="#">📫</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-youtube"></i>
+                <h2>Open my own channel!</h2>
+                <p>It might be Youtube, Tiktok or IG sharing useful technological information. So, stay tuned.</p>
+                <a href="#">📹</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Project 🚀</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mediq.png">
+                <div class="layer">
+                    <h3>MediQ ✈</h3>
+                    <p>Autonomously Controlled Quadplane for Medical Supply Transportation. A hybrid UAV incorporating features of both
+                        fixed-wing aircraft and multi-copter drones.</p>
+                    <a href="https://drive.google.com/file/d/1Pc629fo05WoWjDVOiuBkEOA44Ek3A8ED/view?usp=sharing"><i class="fa-solid fa-plane"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/chat bot.png">
+                <div class="layer">
+                    <h3>Lonelypop 🍭</h3>
+                    <p>Depressive Assessment Chatbot with LSTM Algorithm and Sentiment analysis.</p>
+                    <a href="#"><i class="fa-brands fa-rocketchat"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/coming.png">
+                <div class="layer">
+                    <h3>Coming Soon...</h3>
+                    <p>Can you guess what the project is going to be about???</p>
+                    <a href="#"><i class="fa-solid fa-question"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Coming soon...</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row contact-row">
+            <div class="contact-info">
+                <h1 class="sub-title">Connect with me 📩</h1>
+                <p><i class="fa-solid fa-envelope"></i>pimnapatkoov@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1Domx1DyPG/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/n_smile.pnpk/profilecard/?igsh=MW8yczU2cTNrcXkzcg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="video-container">
+                <video src="images/mazevdo.mp4" muted loop autoplay></video>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 Patty. All rights reserved. Made with <i class="fa-regular fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
