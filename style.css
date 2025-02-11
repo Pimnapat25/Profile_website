@@ -439,18 +439,6 @@ nav ul li a:hover::after {
     }
     .copyright{
         padding-top: 15px;
-        font-size: 14px;
     }
-    .layer{
-        font-size: 12px;
-    }
-    .layer a{
-        font-size: 16px;
-    }
-    .logo{
-        padding-left: 5px;
 
 }
-
-
-
