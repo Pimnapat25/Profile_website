@@ -439,6 +439,9 @@ nav ul li a:hover::after {
     }
     .copyright{
         padding-top: 15px;
+        font-size: 14px;
     }
+    .layer{
+        font-size: 12px;
 
 }
